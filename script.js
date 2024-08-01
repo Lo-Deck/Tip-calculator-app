@@ -59,7 +59,7 @@ Array.from(btnPercentTips).forEach( (element, index) => {
 
 inputAmount.addEventListener('change', () => {
 
-    if(inputAmount && inputPeople && tips !== 0)
+    if(inputAmount.value && inputPeople.value && tips !== 0)
     {
         bill(inputAmount.value , tips, inputPeople.value);
     }
@@ -71,7 +71,7 @@ inputTips.addEventListener('change', () => {
 
     tips = (inputTips.value / 100) + 1;
 
-    if(inputAmount && inputPeople && tips !== 0)
+    if(inputAmount.value && inputPeople.value && tips !== 0)
     {
         bill(inputAmount.value , tips, inputPeople.value);
     }
@@ -106,12 +106,3 @@ btnReset.addEventListener('click', () => {
         }
 
 });
-
-
-//console.log(inputAmount.value);
-
-//console.log(btnPercentTips);
-
-//console.log(inputPeople);
-
-//console.log(inputTips);
