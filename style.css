@@ -1,0 +1,247 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh; 
+    font-family: "Space Mono", monospace;
+    font-size: 1.5rem;    
+    font-weight: 700; 
+    text-align: left;
+    background: url(./images/logo.svg) no-repeat center 3rem,
+                #C5E4E7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    display: block;
+}
+
+.list{
+    list-style: none;
+}
+
+
+/*MAIN*/
+
+.container{
+    margin-top: 9rem;
+    margin-bottom: 5rem;
+    max-width: 23.4375rem;
+    background-color: #fff;
+    border-radius: 1.5rem;
+}
+
+#myForm{
+    padding: 2rem;
+}
+
+.label-input{
+    font-size: 1rem;
+    color: #5E7A7D;
+    position: relative;
+}
+
+input{
+    border-style: none;
+    text-align: right;
+    height: 3rem;
+    display: block;
+    width: 100%;
+}
+
+input:hover{
+    cursor: pointer;
+    border-radius: 0.25rem;
+    outline: 0.15rem solid #26C2AE;
+}
+
+.input-container label::before{
+    content: '';
+    display: inline-block;
+    width: 0.625rem;
+    height: 1rem;
+    background: url(./images/icon-dollar.svg) no-repeat;
+    position: absolute;
+        top: 2.7rem; left: 1rem;
+}
+
+.input-container label:nth-of-type(2):before{
+    width: 0.8125rem;
+    height: 1rem;
+    background: url(./images/icon-person.svg) no-repeat;
+}
+
+.input-container input{
+    font-family: inherit;
+    font-size: inherit;    
+    font-weight: inherit; 
+    color: #00474B;
+    margin-bottom: 2rem;
+}
+
+.list-tips{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 1rem 0 1.2rem;
+}
+
+.li-tips{
+    width: 9.125rem;
+    height: 3rem;
+}
+
+.button-percent{
+    width: 100%;
+    height: 100%;
+    font-family: inherit;
+    font-size: inherit;    
+    font-weight: inherit; 
+    background-color: #00474B;
+    color: #fff;
+    border-style: none;
+    border-radius: 0.5rem;
+}
+
+.button-percent:hover{
+    cursor: pointer;
+    background-color: #9FE8DF;
+}
+
+.btn-percent-active{
+    background-color: #9FE8DF;
+}
+
+#input-tips{
+    text-indent: 30%;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*BLOCK2*/
+
+.result-container{
+    background-color: #00474B;
+    padding: 2.2rem 1.5rem 1.5rem;
+    border-radius: 0.8rem;
+}
+
+.output-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.result-container .label-input{
+    color: #fff;
+}
+
+.result-container .label-input span{
+    display: block;
+    font-size: 0.825rem;
+    color: #7F9D9F;
+}
+
+output{
+    font-size: 2rem;
+    color: #26C2AE;
+}
+
+.result-container button{
+    width: 100%;
+    height: 3rem;
+    font-family: inherit;
+    font-size: 1.25rem;    
+    font-weight: inherit; 
+    text-transform: uppercase;
+    background-color: #26C2AE;
+    color: #00474B;
+    border-style: none;
+    border-radius: 0.5rem;
+}
+
+.result-container button:hover{
+    cursor: pointer;
+    background-color: #9FE8DF;
+}
+
+
+@media screen and (min-width: 58rem)
+{   
+
+    body{
+        background: url(./images/logo.svg) no-repeat center 10rem,
+                    #C5E4E7;
+    }
+
+
+/*MAIN*/
+
+    .container{
+        margin-top: 19rem;
+        margin-bottom: 14rem;
+        max-width: 57.5rem;
+    }
+
+    #myForm{
+        display: flex;
+        gap: 3rem;
+    }
+
+    .input-container{
+        width: 23.75rem;
+    }
+
+    .result-container{
+        width: 25.8125rem;
+    }
+
+    .input-container input{
+        margin-bottom: 2.5rem;
+    }
+
+    .list-tips{
+        justify-content: flex-start;
+    }
+    
+    .li-tips{
+        width: 7.25rem;
+    }
+
+    #input-tips{
+        text-indent: 15%;
+    }
+
+    .input-container label:nth-last-child(2) + input{
+        margin-bottom: 1rem;
+    }
+
+
+/*BLOCK2*/
+
+    .result-container{
+        padding: 2.5rem 2.5rem 2.5rem;
+    }
+
+    .output-container:nth-of-type(2){
+        margin-bottom: 1.5rem;
+    }
+
+    output{
+        font-size: 3rem;
+        color: #26C2AE;
+    }
+
+    .result-container button{
+        margin-top: 4.7rem;
+    }
+
+}

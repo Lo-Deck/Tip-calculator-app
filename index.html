@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="description" content="Exercise Frontend Mentor, Tip calculator app">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+      <link href="style.css" rel="stylesheet" type="text/css">
+      <title>Frontend Mentor | Tip calculator app</title>
+    </head>
+    <body>
+
+      <main class="container">
+
+        <form action="#" id="myForm">
+
+          <div class="input-container">
+
+            <label class="label-input" for="amount">Bill</label>
+            <input type="tel" id="amount" placeholder="0" maxlength="7"   size="10"    >
+
+            <h2 class="label-input">Select Tip %</h2> 
+            <ul class="list list-tips">
+              <li class="li-tips"><button class="button-percent" value="1.05">5%</button></li>
+              <li class="li-tips"><button class="button-percent" value="1.10">10%</button></li>
+              <li class="li-tips"><button class="button-percent" value="1.15">15%</button></li>
+              <li class="li-tips"><button class="button-percent" value="1.25">25%</button></li>
+              <li class="li-tips"><button class="button-percent" value="1.50">50%</button></li>
+              <li class="li-tips"><input type="tel" id="input-tips" placeholder="Custom"></li>
+            </ul>
+    
+            <label class="label-input" for="people">Number of People</label>
+            <input type="tel" id="people" placeholder="0"  maxlength="2" title="Enter number to validate">
+
+          </div>
+
+
+          <div class="result-container">
+
+            <div class="output-container">
+              <label class="label-input" for="amountPerson">Tip Amount <span>/ person</span></label>
+              <output name="tips-person" id="amountPerson">$0.00</output>             
+            </div>
+
+            <div class="output-container">
+              <label class="label-input" for="totalPerson">Total <span>/ person</span></label>
+              <output name="total-person" id="totalPerson">$0.00</output>
+            </div>
+
+            <button type="reset" form="myForm" id='button-reset'>Reset</button>
+
+          </div>
+
+        </form>
+
+      </main>
+
+    <script  src="./script.js"></script>
+
+    </body>
+
+</html>
